@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@layer base {
+  :root {
+    --bg-main: #163172; /* 메인칼라 */
+    --bg-back: #f6f6f6; /* 뒷배경 커러 */
+    --bg-panel: #fafafa; /* 창 칼라 */
+    --bg-side: #f6f6f6; /* 사이드바에서 선택됐을때 반전색상 */
+
+    --border-label: #163172; /* 마이페이지에서 좌측에 붙는 라벨의 색상 */
+
+    --text-font: #000000; /* 거의 대부분의 글씨 색상 */
+    --text-main: #163172; /* 반전색 */
+    --text-back: #f6f6f6; /* 버튼안의 텍스트색 */
+
+    --bg-first: #e2e5ed; /* 스몰캘린더의 공지 많아질수록 진해지는 생상 4단계 */
+    --bg-second: #a8b2ca; /* */
+    --bg-third: #506595; /* */
+    --bg-most: #163172; /* */
+
+    background-color: #f6f6f6; /* 이미지가 없는 경우의 배경색 */
+  }
+  .dark {
+    --bg-main: #383c48;
+    --bg-back: #2b2e37;
+    --bg-panel: #383c48;
+    --bg-side: #2b2e37;
+
+    --border-label: #121212;
+
+    --text-font: #e9e9e9;
+    --text-main: #e9e9e9;
+    --text-back: #e9e9e9;
+
+    --bg-first: #4b4e59;
+    --bg-second: #6d7079;
+    --bg-third: #c3c4c8;
+    --bg-most: #fafafa;
+
+    background-color: #2b2e37;
+  }
+  .ssuk {
+    --bg-main: #6f8788;
+    --bg-back: #00000095;
+    --bg-panel: #00000095;
+    --bg-side: #f6f6f6;
+
+    --border-label: #6f8788;
+
+    --text-font: #fafafa;
+    --text-main: #6f8788;
+    --text-back: #f6f6f6;
+
+    --bg-first: #212829;
+    --bg-second: #506162;
+    --bg-third: #BFC9CA;
+    --bg-most: #F4F5F6;
+
+    background-image: url("../../assets/bg/ssuk_night.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .crayon {
+    --bg-main: #ffffff;
+    --bg-back: #ddf4fe;
+    --bg-panel: #ffffff;
+    --bg-side: #ddf4fe;
+
+    --border-label: #000000;
+
+    --text-font: #454649;
+    --text-main: #454649;
+    --text-back: #454649;
+
+    --bg-first: #fafafa;
+    --bg-second: #51bdeb;
+    --bg-third: #019ee2;
+    --bg-most: #0176e2;
+
+    background-image: url("../../assets/bg/crayon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .art {
+    --bg-main: #1d889c;
+    --bg-back: #f6f6f6;
+    --bg-panel: #ffffff;
+    --bg-side: #0b3550;
+
+    --border-label: #1d889c;
+
+    --text-font: #000000;
+    --text-main: #0b3550;
+    --text-back: #0b3550;
+
+    --bg-first: #c7dde2;
+    --bg-second: #1d889c;
+    --bg-third: #115966;
+    --bg-most: #0d353d;
+
+    background-image: url("../../assets/bg/art.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .lilac {
+    --bg-main: #FDD397;
+    --bg-back: #ffffff;
+    --bg-panel: #ffffff;
+    --bg-side: #FCFAFF;
+
+    --border-label: #FDD397;
+
+    --text-font: #000000;
+    --text-main: #555555;
+    --text-back: #555555;
+
+    --bg-first: #FDD397;
+    --bg-second: #F4B52D;
+    --bg-third: #EF9121;
+    --bg-most: #D4780B;
+
+    background-image: url("../../assets/bg/lilac.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .ssafy {
+    --bg-main: #000000;
+    --bg-back: #ffffff;
+    --bg-panel: #ffffff;
+    --bg-side: #6ccef5;
+
+    --border-label: #163172;
+
+    --text-font: #000000;
+    --text-main: #000000;
+    --text-back: #f6f6f6;
+
+    --bg-first: #e2e5ed;
+    --bg-second: #a8b2ca;
+    --bg-third: #506595;
+    --bg-most: #163172;
+
+    background-image: url("../../assets/bg/ssafy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.font-title {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.font-subtitle {
+  font-family: Montserrat;
+  font-weight: 400;
+}

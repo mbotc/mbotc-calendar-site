@@ -1,0 +1,41 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@j-t-mcc/vue3-chartjs": "^1.2.0",
+    "@kyvg/vue3-notification": "^2.3.4",
+    "@toast-ui/editor": "^3.1.1",
+    "@toast-ui/editor-plugin-color-syntax": "^3.0.2",
+    "axios": "^0.23.0",
+    "chart.js": "^3.6.0",
+    "core-js": "^3.6.5",
+    "sockjs-client": "^1.5.2",
+    "vue": "^3.0.0",
+    "vue-axios": "^3.3.7",
+    "vue-chart-3": "^0.5.11",
+    "vue-router": "^4.0.0-0",
+    "vue3-perfect-scrollbar": "^1.5.5",
+    "vuex": "^4.0.0-0",
+    "webstomp-client": "^1.2.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
